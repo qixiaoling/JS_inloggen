@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Mukta', Arial, sans-serif;
+}
+
+.sign-up-container{
+    padding:30px;
+    background-color: hsl(139, 54%, 83%);
+    color: hsl(135, 10%, 23%);
+    border-radius: 4px;
+}
+
+form{
+    /*form里面的div确实是竖着排列的， 长条没有在自下面因为它是这个div的成员*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    /*只要一把长条变长 就自动自己移去下一行了。*/
+    width: 100%;
+}
+/*//把这个WARMING早就放在这里，但还不写字上去， 就看不到*/
+.form-warning{
+    color:red;
+    font-size:10px;
+    min-height: 16px;
+}
